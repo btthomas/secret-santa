@@ -1,0 +1,33 @@
+doctype html
+html(lang='en')
+    head
+        title= 'Secret Santa'
+        meta(name='viewport' content='width=device-width, initial-scale=1')
+        link(href='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css', rel='stylesheet')
+        link(href='style/style.css', rel='stylesheet')
+    body
+        .container-fluid
+            nav.navbar.navbar-defualt.navbar-inverse.navbar-fixed-top
+                ul.nav.navbar-nav
+                    li
+                        a(href='#') Home
+            .row
+                .col-xs-12.col-md-4.col-md-offset-4
+                    .h1= 'Secret Santa'
+            .row
+                .col-sm-4.col-sm-offset-4.col-xs-12
+                    .input-group
+                        input(type='text', class='form-control', id='group', placeholder='group name...')
+                        input(type='password', class='form-control', id='pass', placeholder='password...')
+            .row
+                .col-sm-2.col-sm-offset-5.col-xs-12
+                    .btn-group.center
+                        button(type='button', onclick='create()').btn.btn-primary.
+                            create
+                        button(type='button', onclick='login()').btn.btn-primary.
+                            login
+    block scripts
+        script(src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js')
+        script(src='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js')
+        script(src='lib/script.js')
+            

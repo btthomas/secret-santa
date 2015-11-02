@@ -1,0 +1,32 @@
+doctype html
+html(lang='en')
+    head
+        title= 'Secret Santa: Admin'
+        meta(name='viewport' content='width=device-width, initial-scale=1')
+        link(href='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css', rel='stylesheet')
+        link(href='style/style.css', rel='stylesheet')
+    body
+        .container-fluid
+            .row
+                .col-xs-12.col-md-4.col-md-offset-4
+                    .h1= 'Secret Santa: Admin'
+            .row
+                .col-xs-12
+                    table.table
+                        thead
+                          tr
+                            th= 'Name'
+                            th= 'Number'
+                        tbody
+                          each group, i in locals.groups
+                            tr
+                              td #{group.name}
+                              td #{group.number}
+            .row
+                .col-xs-12
+                    p= 'test 123...'
+    block scripts
+        script(src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js')
+        script(src='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js')
+        script(src='lib/script.js')
+            

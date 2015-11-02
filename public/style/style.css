@@ -1,0 +1,20 @@
+
+h1{
+	text-align: center
+}
+
+body { 
+	padding-top: 70px; 
+	background-color: white;
+}
+
+div.center{
+    margin: auto;
+}   
+
+div.content{
+	border: 1px solid red;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+    margin: 15px;
+}

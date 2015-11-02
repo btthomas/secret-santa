@@ -1,0 +1,24 @@
+{
+    "name": "secret-santa",
+    "version": "0.0.1",
+    "description": "secret santa",
+    "dependencies": {
+        "express": "4.x",
+        "pg": "4.x",
+        "jade": "latest",
+        "body-parser": "1.14.x"
+    },
+    "scripts": {
+        "start": "node app.js"
+    },
+    "author": "Blake Thomas <blaketaylorthomas@gmail.com>",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/btthomas/secret-santa.git"
+    },
+    "keywords": [
+        "node",
+        "express",
+        "secret-santa"
+    ]
+}
